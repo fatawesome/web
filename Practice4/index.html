@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Timetable</title>
+  </head>
+  <body>
+    <style>
+      .rotate {
+        width: 40px;
+        margin-top: 90px;
+        -webkit-transform: rotate(-90deg);
+      }
+    </style>
+    <style>
+      .silver {
+        background-color: #f2f2f2;
+      }
+    </style>
+    <table border="1" cellspacing="0">
+      <tr class="silver">
+        <td align="center" valign="middle" colspan="2"><i><b>Дата</b></i></td>
+        <td align="center" valign="middle"></td>
+        <td align="center" valign="middle"><i><b>Аудитория</b></i></td>
+        <td align="center" valign="middle"><i><b>Преподаватель</b></i></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" rowspan="8" width="10"><div class="rotate"><b>ПОНЕДЕЛЬНИК</b></div></td>
+        <td align="center" valign="middle" class="silver"><b>8<sup>00</sup>-9<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="50%"><b>ФИЗИЧЕСКАЯ КУЛЬТУРА</b></td>
+        <td align="center" valign="middle" class="silver"><b>РУБИН</b></td>
+        <td align="left" valign="middle"><b><i>Русяева Александра Андреевна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>9<sup>45</sup>-11<sup>20</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>КОМПЬЮТЕРНАЯ МАТЕМАТИКА</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Анисимова Светлана Игоревна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>11<sup>30</sup>-13<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>КОМПЬЮТЕРНАЯ МАТЕМАТИКА</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Анисимова Светлана Игревна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>13<sup>15</sup>-14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ИНФОКОММУНИКАЦИОННЫЕ СИСТЕМЫ И СЕТИ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Черников Арсений Викторович</i></b></td>
+      </tr>
+      <tr bgcolor="grey">
+        <td align="center" valign="middle" class="silver"><b>14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ПЕРЕРЫВ</b></td>
+        <td align="center" valign="middle"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>14<sup>30</sup>-15<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ИНФОКОММУНИКАЦИОННЫЕ СИСТЕМЫ И СЕТИ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Черников Арсений Викторович</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>15<sup>15</sup>-16<sup>50</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>МЕНЕДЖМЕНТ</b></td>
+        <td align="center" valign="middle" class="silver"><b>306</b></td>
+        <td align="left" valign="middle"><b><i>Нечаева Елена Владимировна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>17<sup>00</sup>-18<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+
+      <tr>
+        <td align="center" valign="middle" rowspan="9" width="10"><div class="rotate"><b>ВТОРНИК</b></div></td>
+        <td align="center" valign="middle" class="silver"><b>8<sup>00</sup>-9<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="50%"><b>ФИЗИКА-СХЕМОТЕХНИКА</b></td>
+        <td align="center" valign="middle" class="silver"><b>РУБИН</b></td>
+        <td align="left" valign="middle"><b><i>Шаров Михаил Терентьевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>9<sup>45</sup>-11<sup>20</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ</b></td>
+        <td align="center" valign="middle" class="silver"><b>РУБИН</b></td>
+        <td align="left" valign="middle"><b><i>Никитина Елена Юрьевна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>11<sup>30</sup>-13<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ИНФОКОММУНИКАЦИОННЫЕ СИСТЕМЫ И СЕТИ</b></td>
+        <td align="center" valign="middle" class="silver"><b>РУБИН</b></td>
+        <td align="left" valign="middle"><b><i>Черников Арсений Викторович</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>13<sup>15</sup>-14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ</b></td>
+        <td align="center" valign="middle" class="silver"><b>РУБИН</b></td>
+        <td align="left" valign="middle"><b><i>Никитина Елена Юрьевна</i></b></td>
+      </tr>
+      <tr bgcolor="grey">
+        <td align="center" valign="middle" class="silver"><b>14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ПЕРЕРЫВ</b></td>
+        <td align="center" valign="middle"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>14<sup>30</sup>-15<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ</b></td>
+        <td align="center" valign="middle" class="silver"><b>РУБИН</b></td>
+        <td align="left" valign="middle"><b><i>Никитина Елена Юрьевна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver" rowspan="2"><b>15<sup>15</sup>-16<sup>50</sup></b></td>
+
+        <td align="left" valign="middle" width="55%"><b>ТРПО</b></td>
+        <td align="center" valign="middle" class="silver" rowspan="2"><b>РУБИН</b></td>
+        <td align="left" valign="middle"><b><i>Никитана Елена Юрьевна</i></b></td>
+      </tr>
+      <tr>
+
+        <td align="left" valign="middle" width="55%"><b>БД</b></td>
+
+        <td align="left" valign="middle"><b><i>Винник Александ Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>17<sup>00</sup>-18<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+
+      <tr>
+        <td align="center" valign="middle" rowspan="8" width="10"><div class="rotate"><b>СРЕДА</b></div></td>
+        <td align="center" valign="middle" class="silver"><b>8<sup>00</sup>-9<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="50%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>9<sup>45</sup>-11<sup>20</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>СТРУКТУРНОЕ ПРОГРАММИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>11<sup>30</sup>-13<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>БИЗНЕС-ПЛАНИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>306</b></td>
+        <td align="left" valign="middle"><b><i>Федорущенко Екатерина Олеговна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>13<sup>15</sup>-14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr bgcolor="grey">
+        <td align="center" valign="middle" class="silver"><b>14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ПЕРЕРЫВ</b></td>
+        <td align="center" valign="middle"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>14<sup>30</sup>-15<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>15<sup>15</sup>-16<sup>50</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>РАЗРАБОТКА WEB ПРИЛОЖЕНИЙ</b></td>
+        <td align="center" valign="middle" class="silver"><b>308</b></td>
+        <td align="left" valign="middle"><b><i>Первушин Артём Сергеевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>17<sup>00</sup>-18<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+
+      <tr>
+        <td align="center" valign="middle" rowspan="8" width="10"><div class="rotate"><b>СРЕДА</b></div></td>
+        <td align="center" valign="middle" class="silver"><b>8<sup>00</sup>-9<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="50%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>9<sup>45</sup>-11<sup>20</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>СТРУКТУРНОЕ ПРОГРАММИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>11<sup>30</sup>-13<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>БИЗНЕС-ПЛАНИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>306</b></td>
+        <td align="left" valign="middle"><b><i>Федорущенко Екатерина Олеговна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>13<sup>15</sup>-14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr bgcolor="grey">
+        <td align="center" valign="middle" class="silver"><b>14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ПЕРЕРЫВ</b></td>
+        <td align="center" valign="middle"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>14<sup>30</sup>-15<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>15<sup>15</sup>-16<sup>50</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>РАЗРАБОТКА WEB ПРИЛОЖЕНИЙ</b></td>
+        <td align="center" valign="middle" class="silver"><b>308</b></td>
+        <td align="left" valign="middle"><b><i>Первушин Артём Сергеевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>17<sup>00</sup>-18<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+
+      <tr>
+        <td align="center" valign="middle" rowspan="8" width="10"><div class="rotate"><b>СРЕДА</b></div></td>
+        <td align="center" valign="middle" class="silver"><b>8<sup>00</sup>-9<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="50%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>9<sup>45</sup>-11<sup>20</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>СТРУКТУРНОЕ ПРОГРАММИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>11<sup>30</sup>-13<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>БИЗНЕС-ПЛАНИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>306</b></td>
+        <td align="left" valign="middle"><b><i>Федорущенко Екатерина Олеговна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>13<sup>15</sup>-14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr bgcolor="grey">
+        <td align="center" valign="middle" class="silver"><b>14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ПЕРЕРЫВ</b></td>
+        <td align="center" valign="middle"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>14<sup>30</sup>-15<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>15<sup>15</sup>-16<sup>50</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>РАЗРАБОТКА WEB ПРИЛОЖЕНИЙ</b></td>
+        <td align="center" valign="middle" class="silver"><b>308</b></td>
+        <td align="left" valign="middle"><b><i>Первушин Артём Сергеевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>17<sup>00</sup>-18<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+
+      <tr>
+        <td align="center" valign="middle" rowspan="8" width="10"><div class="rotate"><b>СРЕДА</b></div></td>
+        <td align="center" valign="middle" class="silver"><b>8<sup>00</sup>-9<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="50%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>9<sup>45</sup>-11<sup>20</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>СТРУКТУРНОЕ ПРОГРАММИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>11<sup>30</sup>-13<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>БИЗНЕС-ПЛАНИРОВАНИЕ</b></td>
+        <td align="center" valign="middle" class="silver"><b>306</b></td>
+        <td align="left" valign="middle"><b><i>Федорущенко Екатерина Олеговна</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>13<sup>15</sup>-14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr bgcolor="grey">
+        <td align="center" valign="middle" class="silver"><b>14<sup>00</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ПЕРЕРЫВ</b></td>
+        <td align="center" valign="middle"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>14<sup>30</sup>-15<sup>05</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>ТЕХНОЛОГИЯ РАЗРАБОТКИ И ЗАЩИТЫ БАЗ ДАННЫХ</b></td>
+        <td align="center" valign="middle" class="silver"><b>309</b></td>
+        <td align="left" valign="middle"><b><i>Винник Александр Анатольевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>15<sup>15</sup>-16<sup>50</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b>РАЗРАБОТКА WEB ПРИЛОЖЕНИЙ</b></td>
+        <td align="center" valign="middle" class="silver"><b>308</b></td>
+        <td align="left" valign="middle"><b><i>Первушин Артём Сергеевич</i></b></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" class="silver"><b>17<sup>00</sup>-18<sup>35</sup></b></td>
+        <td align="left" valign="middle" width="55%"><b></b></td>
+        <td align="center" valign="middle" class="silver"><b></b></td>
+        <td align="left" valign="middle"><b><i></i></b></td>
+      </tr>
+
+    </table>
+  </body>
+</html>
